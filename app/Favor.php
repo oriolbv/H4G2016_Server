@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Favor extends Model
 {
-    protected $fillable = ['titol', 'descripcio', 'lat', 'long', 'demanar', 'categoria'];
+    protected $fillable = ['titol', 'descripcio', 'lat', 'long', 'demanar', 'categoria', 'user_id'];
 
     public function user()
     {

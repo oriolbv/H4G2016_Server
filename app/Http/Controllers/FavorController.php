@@ -12,10 +12,13 @@ class FavorController extends Controller
 {
     public function store(Request $request)
     {
-        $r = $request->json()->all();
-        return Favor::create($r);
+        $input = $request->json()->all();
+        
+        $usuari = Favor::firstOrCreate(array('titol' => $input['titol'], 'descripcio' => $input['descripcio'], 'lat' => $input['lat'], 'long' => $input['long'], 'demanar' => $input['demanar'], 'user_id' => $input['user_id'], 'categoria' => $input['categoria']));
+        return response()->json(['success' => 1, 'data' => $usuari]);
 
-    	return Auth::user()->favors()->create($request->all());
+        
+        
     }
 
     public function show($id)
