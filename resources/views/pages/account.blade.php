@@ -37,6 +37,10 @@
                         <label for="">Contraseña</label>
                         <input name="password" type="password" class="form-control">
                     </div>
+                    <div class="form-group">
+                        <label for="">Confirmar Contraseña</label>
+                        <input name="password_confirmation" type="password" class="form-control">
+                    </div>
                     <button class="btn btn-primary">Registrarse</button>
                 </form>
             </div>
