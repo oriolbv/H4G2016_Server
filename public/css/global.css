@@ -1,0 +1,37 @@
+.navbar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	border-radius: 0;
+	margin-bottom: 40px;
+}
+
+.title-home {
+	font-family: 'Oswald';
+	font-weight: bold;
+	color: #111;
+}
+.title-home > span {
+	color: #3498db;
+}
+.intro {
+	margin: 20px 0;
+}
+.download-ios {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	text-decoration: none;
+}
+.download-ios > i {
+	font-size: 30px;
+	margin-top: 5px;
+	margin-left: 25px !important;
+}
+.download-ios:hover {
+	text-decoration: none;
+	background-color: #2980b9;
+	color: #fff;
+}
