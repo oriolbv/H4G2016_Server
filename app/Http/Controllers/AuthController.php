@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Hash;
+
 use App\Http\Requests;
 use App\Http\Requests\AuthRequest;
 use App\Http\Requests\RegisterRequest;
@@ -15,9 +17,11 @@ class AuthController extends Controller
 {
     public function login(AuthRequest $request)
     {
-    	$user = User::where('email', $request->get('email'))->first();
+        $input = $request->json()->all();
+
+    	$user = User::where('email', $input['email'])->first();
     	if($user) {
-    		$pw = $request->get('password');
+    		$pw = $input['password'];
     		if (Hash::check($pw, $user->password)) return $user;
     	}
     	return response()->json(['msg' => 'Email o contraseña incorrecto.']); 
@@ -25,7 +29,10 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
-    	$user = User::create($request->all());
+        $input = $request->json()->all();
+        $input['password'] = Hash::make($input['password']);
+
+    	$user = User::create($input);
         dd($user);
     }
 }
