@@ -1,4 +1,4 @@
-<?php namespace App\Http\User;
+<?php namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RegisterRequest extends FormRequest {
