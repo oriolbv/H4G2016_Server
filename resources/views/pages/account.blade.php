@@ -7,6 +7,7 @@
             <div class="col-sm-6">
                 <h2>Iniciar Sessión</h2>
                 <hr>
+                @include('partials.errors')
                 <form action="/web/login" method="POST">
                     <div class="form-group">
                         <label for="">Email</label>
@@ -22,6 +23,7 @@
             <div class="col-sm-6">
                 <h2>Crear nueva cuenta</h2>
                 <hr>
+                @include('partials.errors')
                 <form action="/web/register" method="POST">
                     <div class="form-group">
                         <label for="">Nombre</label>
