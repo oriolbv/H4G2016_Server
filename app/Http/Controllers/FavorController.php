@@ -15,6 +15,11 @@ class FavorController extends Controller
     	return Auth::user()->favors()->create($request->all());
     }
 
+    public function show($id)
+    {
+    	return Favor::findOrFail($id);
+    }
+
     public function favorsDemanats()
     {
     	return Favor::demanar()->get();
@@ -24,5 +29,5 @@ class FavorController extends Controller
     {
     	return Favor::oferts()->get();
     }
-   
+
 }

@@ -15,6 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('test', function() {
+	return App\Favor::all();
+});
+
+Route::group(['prefix' => 'api'], function() {
+	Route::post('favors', 'FavorController@store');
+	Route::get('favors/oferts', 'FavorController@favorsOferts');
+	Route::get('favors/demanats', 'FavorController@favorsDemanats');
+	Route::get('favors/{id}', 'FavorController@show');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
