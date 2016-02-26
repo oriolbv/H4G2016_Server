@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Favors4Good</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/global.css">
-</head>
-<body>
+@extends('template')
+
+@section('content')
+
 	<div class="container">
     <div class="well well-sm">
         <strong>Category Title</strong>
@@ -44,5 +37,4 @@
     </div>
 </div>
 
-</body>
-</html>
+@stop

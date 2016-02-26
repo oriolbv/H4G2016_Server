@@ -14,6 +14,11 @@ class HomeController extends Controller
     {
     	return view('pages.home');
     }
+
+    public function cuenta()
+    {
+        return view('pages.account');
+    }
     
     public function llistar() 
     {

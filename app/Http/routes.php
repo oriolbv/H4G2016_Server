@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/cuenta', 'HomeController@cuenta');
 
 Route::get('/list', 'HomeController@llistar');
 
