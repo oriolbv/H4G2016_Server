@@ -33,6 +33,11 @@ Route::group(['prefix' => 'auth'], function() {
     Route::post('register', 'AuthController@register');
 });
 
+Route::group(['prefix' => 'web', 'namespace', => 'Auth'], function() {
+	Route::post('login', 'AuthController@postLogin');
+	Route::post('register', 'AuthController@postRegister');
+});
+
 Route::group(['prefix' => 'admin'], function() {
     Route::resource('favors', 'AdminController');
 });

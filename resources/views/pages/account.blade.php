@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <h2>Iniciar Sessión</h2>
                 <hr>
-                <form action="">
+                <form action="/web/login">
                     <div class="form-group">
                         <input type="text" class="form-control">
                     </div>
@@ -20,7 +20,7 @@
             <div class="col-sm-6">
                 <h2>Crear nueva cuenta</h2>
                 <hr>
-                <form action="">
+                <form action="/web/register">
                     <div class="form-group">
                         <input type="text" class="form-control">
                     </div>
