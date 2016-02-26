@@ -24,6 +24,11 @@ Route::group(['prefix' => 'api'], function() {
 	Route::get('favors/{id}', 'FavorController@show');
 });
 
+Route::group(['prefix' => 'auth'], function() {
+    Route::post('login', 'AuthController@login');
+    Route::get('logout', 'AuthController@logout');
+});
+
 Route::group(['prefix' => 'admin'], function() {
     Route::resource('favors', 'AdminController');
 });

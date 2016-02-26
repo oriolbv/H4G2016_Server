@@ -13,7 +13,7 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">
-					<img alt="Brand" src="">
+					<img alt="LOGO" src="">
 				</a>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 					Descargar <br>
 					<b>iOS</b>
 				</a>
-				<p>Pronto tambien en android.</p>
+				<!-- <p style="margin-top: 20px">Pronto tambien en android.</p> -->
 			</div>
 		</div>
 	</div>
