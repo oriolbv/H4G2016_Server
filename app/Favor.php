@@ -12,4 +12,14 @@ class Favor extends Model
     {
     	return $this->belongsTo('App\User');
     }
+
+    public function scopeDemanats($query)
+    {
+        return $query->where('demanar', 1);
+    }
+
+    public function scopeOferts($query)
+    {
+        return $query->where('demanar', 0);
+    }
 }

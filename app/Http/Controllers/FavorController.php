@@ -17,11 +17,12 @@ class FavorController extends Controller
 
     public function favorsDemanats()
     {
-    	return Favor::where('demanar', 1)->get();
+    	return Favor::demanar()->get();
     }
 
     public function favorsOferts()
     {
-    	return Favor::where('demanar', 0)->get();
+    	return Favor::oferts()->get();
     }
+   
 }
