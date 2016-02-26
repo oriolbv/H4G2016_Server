@@ -16,7 +16,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/list', 'HomeController@llistar');
 
 Route::get('test', function() {
-	return App\Favor::all();
+	return App\User::all();
 });
 
 Route::group(['prefix' => 'api'], function() {
