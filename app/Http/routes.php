@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/list', 'HomeController@llistar');
+
 Route::get('test', function() {
 	return App\Favor::all();
 });
