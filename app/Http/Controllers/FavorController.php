@@ -12,6 +12,13 @@ class FavorController extends Controller
 {
     public function store(Request $request)
     {
+        return Favor::create([
+            'titol' => $request->get('titol'),
+            'descripcio' => $request->get('descripcio'),
+            'lat' => $request->get('lat'),
+            'long' => $request->get('long'),
+            'demanar' => $request->get('demanar')
+        ]);
     	return Auth::user()->favors()->create($request->all());
     }
 

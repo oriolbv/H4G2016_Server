@@ -26,7 +26,7 @@ Route::group(['prefix' => 'api'], function() {
 
 Route::group(['prefix' => 'auth'], function() {
     Route::post('login', 'AuthController@login');
-    Route::get('logout', 'AuthController@logout');
+    Route::post('register', 'AuthController@register');
 });
 
 Route::group(['prefix' => 'admin'], function() {
