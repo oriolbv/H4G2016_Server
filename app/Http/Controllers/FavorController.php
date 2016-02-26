@@ -17,8 +17,11 @@ class FavorController extends Controller
             'descripcio' => $request->get('descripcio'),
             'lat' => $request->get('lat'),
             'long' => $request->get('long'),
-            'demanar' => $request->get('demanar')
+            'demanar' => $request->get('demanar'),
+            'categoria' => $request->get('categoria'),
+            'user_id' => $request->get('user_id')
         ]);
+
     	return Auth::user()->favors()->create($request->all());
     }
 
