@@ -12,7 +12,7 @@
 	color: #111;
 }
 .title-home > span {
-	color: #3498db;
+	color: #479689;
 }
 .intro {
 	margin: 20px 0;
@@ -21,7 +21,7 @@
 	display: inline-block;
 	border-radius: 10px;
 	padding: 10px 20px;
-	background-color: #3498db;
+	background-color: #1abc9c;
 	color: #fff;
 	text-decoration: none;
 }
@@ -32,6 +32,6 @@
 }
 .download-ios:hover {
 	text-decoration: none;
-	background-color: #2980b9;
+	background-color: #16a085;
 	color: #fff;
 }
