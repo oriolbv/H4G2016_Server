@@ -24,7 +24,7 @@ class AuthController extends Controller
     		$pw = $input['password'];
     		if (Hash::check($pw, $user->password)) return $user;
     	}
-    	return response()->json(['msg' => 'Email o contraseña incorrecto.']); 
+    	return response()->json(['success' => 0, 'data' => 'Usuario o clave incorrectos.']);
     }
 
     public function register(Request $request)
@@ -32,7 +32,6 @@ class AuthController extends Controller
         $input = $request->json()->all();
         $input['password'] = Hash::make($input['password']);
 
-    	$user = User::create($input);
-        dd($user);
+    	return $user = User::create($input);
     }
 }
