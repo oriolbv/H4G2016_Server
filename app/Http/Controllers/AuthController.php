@@ -23,8 +23,9 @@ class AuthController extends Controller
     	return response()->json(['msg' => 'Email o contraseña incorrecto.']); 
     }
 
-    public function register(RegisterRequest $request)
+    public function register(Request $request)
     {
-    	return User::create($request->all());
+    	$user = User::create($request->all());
+        dd($user);
     }
 }
