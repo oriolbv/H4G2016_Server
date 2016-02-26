@@ -44,6 +44,6 @@ class CreateFavorTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('favors');
     }
 }
