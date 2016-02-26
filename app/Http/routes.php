@@ -23,6 +23,7 @@ Route::group(['prefix' => 'api'], function() {
 	Route::post('favors', 'FavorController@store');
 	Route::get('favors/ofertes', 'FavorController@favorsOferts');
 	Route::get('favors/demanats', 'FavorController@favorsDemanats');
+	Route::get('favors/user/{id}', 'FavorController@favorsByUser');
 	Route::get('favors/{id}', 'FavorController@show');
 });
 

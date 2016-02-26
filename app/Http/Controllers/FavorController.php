@@ -14,10 +14,14 @@ class FavorController extends Controller
     {
         $input = $request->json()->all();
         
-        $usuari = Favor::firstOrCreate(array('titol' => $input['titol'], 'descripcio' => $input['descripcio'], 'lat' => $input['lat'], 'long' => $input['long'], 'demanar' => $input['demanar'], 'user_id' => $input['user_id'], 'categoria' => $input['categoria']));
-        return response()->json(['success' => 1, 'data' => $usuari]);
+        // $favor = Favor::create($input);
 
-        
+        $user = User::findOrFail($input['user_id']);
+
+        $favor = $user->favors()->create($input);
+
+        // $usuari = Favor::firstOrCreate(array('titol' => $input['titol'], 'descripcio' => $input['descripcio'], 'lat' => $input['lat'], 'long' => $input['long'], 'demanar' => $input['demanar'], 'user_id' => $input['user_id'], 'categoria' => $input['categoria']));
+        return response()->json(['success' => 1, 'data' => $favor]);
         
     }
 
@@ -28,12 +32,19 @@ class FavorController extends Controller
 
     public function favorsDemanats()
     {
-    	return Favor::demanar()->get();
+    	return Favor::demanats()->orderBy('created_at', 'DESC')->get();
     }
 
     public function favorsOferts()
     {
-    	return Favor::oferts()->get();
+    	return Favor::oferts()->orderBy('created_at', 'DESC')->get();
+    }
+
+    public function favorsByUser($id)
+    {
+        $user = User::findOrFail($id);
+
+        return $user->favors();
     }
 
 }
