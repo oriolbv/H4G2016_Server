@@ -19,9 +19,13 @@ Route::get('test', function() {
 
 Route::group(['prefix' => 'api'], function() {
 	Route::post('favors', 'FavorController@store');
-	Route::get('favors/oferts', 'FavorController@favorsOferts');
+	Route::get('favors/ofertes', 'FavorController@favorsOferts');
 	Route::get('favors/demanats', 'FavorController@favorsDemanats');
 	Route::get('favors/{id}', 'FavorController@show');
+});
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::resource('favors', 'AdminController');
 });
 
 /*
