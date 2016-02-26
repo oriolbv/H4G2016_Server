@@ -27,7 +27,7 @@
                                 {{$favor->categoria}}</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success pull-right" href="http://www.jquery2dotnet.com">+ Info</a>
+                            <a class="btn btn-success pull-right" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
                         </div>
                     </div>
                 </div>

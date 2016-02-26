@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/cuenta', 'HomeController@cuenta');
 
 Route::get('/list', 'HomeController@llistar');
+Route::get('/list/{id}', 'HomeController@show');
 
 Route::get('test', function() {
 	return App\User::all();

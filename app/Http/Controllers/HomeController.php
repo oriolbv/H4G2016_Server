@@ -28,4 +28,10 @@ class HomeController extends Controller
                 ->with('favors', $favors);
 
     }
+    
+    public function show($id)
+    {
+    	//return Favor::findOrFail($id);
+        dd("HELLOO");
+    }
 }
