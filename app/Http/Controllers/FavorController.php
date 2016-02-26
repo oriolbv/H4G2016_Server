@@ -14,11 +14,11 @@ class FavorController extends Controller
     {
         $input = $request->json()->all();
         
-        // $favor = Favor::create($input);
+        $favor = Favor::create($input);
 
-        $user = User::findOrFail($input['user_id']);
+        // $user = User::findOrFail($input['user_id']);
 
-        $favor = $user->favors()->create($input);
+        // $favor = $user->favors()->create($input);
 
         // $usuari = Favor::firstOrCreate(array('titol' => $input['titol'], 'descripcio' => $input['descripcio'], 'lat' => $input['lat'], 'long' => $input['long'], 'demanar' => $input['demanar'], 'user_id' => $input['user_id'], 'categoria' => $input['categoria']));
         return response()->json(['success' => 1, 'data' => $favor]);
