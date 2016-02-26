@@ -28,7 +28,7 @@ class FavorController extends Controller
 
     public function favorsDemanats()
     {
-    	return Favor::demanar()->get();
+    	return Favor::demanats()->get();
     }
 
     public function favorsOferts()
