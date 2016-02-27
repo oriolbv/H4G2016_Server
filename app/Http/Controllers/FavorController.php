@@ -58,5 +58,12 @@ class FavorController extends Controller
 
         return response()->json(['success' => 1, 'data' => $favuser]);
     }
+    
+    public function finalitzarFavor($id_favor) {
+        $favor = Favor::findOrFail($id_favor);
+        $favor->acabat = true;
+        $favor->save();
+        return response()->json(['success' => 1, 'data' => $favor]);
+    }
 
 }
