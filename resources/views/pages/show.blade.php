@@ -65,7 +65,7 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star-empty"></span>
                             Anonymous
-                            <span class="pull-right">hace 10 días</span>
+                            <span class="pull-right">hace 4 días</span>
                             <p>Muchas gracias! Me ha ayudado muchisimo</p>
                         </div>
                     </div>
