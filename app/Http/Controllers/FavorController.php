@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Favor;
 use App\User;
+use App\FavorUser;
 
 class FavorController extends Controller
 {
@@ -45,6 +46,17 @@ class FavorController extends Controller
         $user = User::findOrFail($id);
 
         return $user->favors();
+    }
+
+    public function contactar($id_donant, $id_receptor, $id_favor)
+    {
+        $favuser = FavorUser::create([
+            'favor_id'          => $id_favor,
+            'user_id_donant'    => $id_donant,
+            'user_id_rebut'     => $id_receptor
+        ]);
+
+        return response()->json(['success' => 1, 'data' => $favuser]);
     }
 
 }
