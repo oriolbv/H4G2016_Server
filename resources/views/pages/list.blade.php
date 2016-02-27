@@ -25,12 +25,11 @@
                         </span>
                     </h4>
                     <p class="group inner list-group-item-text">
-                        {{$favor->descripcio}}</p>
-
-                        <span class="label label-default">{{$favor->categoria}}</span>
-
-                        <a class="btn btn-primary btn-block" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
-                    </div>
+                        {{$favor->descripcio}}
+                    </p>
+                    <span class="label label-default">{{$favor->categoria}}</span>
+                    <hr>
+                    <a class="btn btn-primary btn-block" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
                 </div>
             </div>
         </div>
