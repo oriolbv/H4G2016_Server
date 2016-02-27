@@ -40,7 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Oops! Esta página no existe!.</div>
+                <div class="title">Oops! Esta página no existe!</div>
                 <a href="/">Volver atrás.</a>
             </div>
         </div>
