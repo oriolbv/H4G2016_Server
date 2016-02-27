@@ -26,8 +26,7 @@
                         {{$favor->descripcio}}</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
-                            <p class="lead">
-                                {{$favor->categoria}}</p>
+                            <span class="label label-primary">{{$favor->categoria}}</span>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <a class="btn btn-success pull-right" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
@@ -41,11 +40,7 @@
 </div>
 <script>
     $('.products').masonry({
-        // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.item',
-        // use element for option
-        // columnWidth: '.grid-sizer',
-        // percentPosition: true
     })
 </script>
 @stop
