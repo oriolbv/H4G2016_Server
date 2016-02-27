@@ -60,10 +60,8 @@ class FavorController extends Controller
     }
     
     public function finalitzarFavor($id_favor) {
-        $favor = Favor::findOrFail($id_favor);
-        $favor->acabat = true;
-        $favor->save();
-        return response()->json(['success' => 1, 'data' => $favor]);
+        $favor = Favor::destroy($id_favor);
+        return response()->json(['success' => 1, 'data' => 'Eliminat']);
     }
 
 }

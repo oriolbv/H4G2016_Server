@@ -28,7 +28,7 @@ Route::group(['prefix' => 'api'], function() {
 	Route::get('favors/demanats', 'FavorController@favorsDemanats');
 	Route::get('favors/user/{id}', 'FavorController@favorsByUser');
 	Route::get('favors/{id}', 'FavorController@show');
-    Route::put('favors/{id}', 'FavorController@finalitzarFavor');
+    Route::delete('favors/{id}', 'FavorController@finalitzarFavor');
 });
 
 Route::group(['prefix' => 'auth'], function() {
