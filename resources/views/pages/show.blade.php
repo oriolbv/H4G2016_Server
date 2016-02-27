@@ -6,16 +6,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1><a href="#">{{$favor->titol}}</a></h1>
+                <h1>{{$favor->titol}}</h1>
                 <div class="thumbnail">
                     <iframe width="100%" height="350" frameborder="0" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?q={{$favor->lat}},{{$favor->long}}&hl=es;z=14&amp&output=embed">
                     </iframe>
                     
                     <div class="caption-full">
-                        
-                     
-                        <p>{{$favor->descripcio}}</p>
+                        <p>{{ $favor->descripcio }}</p>
+                        <hr>
+                        <h3>Interesado? Descargate la app y ponte en contacto!</h3>
+                        <a href="/" class="btn btn-block btn-primary">Descargar</a>
                     </div>
                     <div class="ratings">
                         <p class="pull-right">3 reviews</p>
@@ -25,7 +26,7 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
+                            4.0 estrellas
                         </p>
                     </div>
                 </div>
@@ -47,8 +48,8 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star-empty"></span>
                             Anonymous
-                            <span class="pull-right">10 days ago</span>
-                            <p>This product was great in terms of quality. I would definitely buy another!</p>
+                            <span class="pull-right">hace 2 horas</span>
+                            <p>Al principio no me gustaba la idea de quedar extraño, pero me ha gustado mucho la experiencia. Lo recomiendo!</p>
                         </div>
                     </div>
 
@@ -62,8 +63,8 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star-empty"></span>
                             Anonymous
-                            <span class="pull-right">12 days ago</span>
-                            <p>I've alredy ordered another one!</p>
+                            <span class="pull-right">hace 10 días</span>
+                            <p>Muchas gracias! Me ha ayudado muchisimo</p>
                         </div>
                     </div>
 
@@ -75,26 +76,14 @@
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            Anonymous
-                            <span class="pull-right">15 days ago</span>
-                            <p>I've seen some better than this, but not at this price. I definitely recommend this item.</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            Carlos
+                            <span class="pull-right">hace 1 semana</span>
+                            <p>Lo recomiendo! 5/5</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
     </div>
 @stop

@@ -23,5 +23,17 @@
 </nav>
 
 @yield('content')
+
+	<div class="container">
+	<hr>
+	<!-- Footer -->
+		<footer>
+		    <div class="row">
+		        <div class="col-lg-12">
+		            <p>Copyright &copy; Favors4Good 2016</p>
+		        </div>
+		    </div>
+		</footer>
+	</div>
 </body>
 </html>

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/global.css">
 </head>
-<body>
+<body style="height:100vh">
 	<nav class="navbar container">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -42,6 +42,17 @@
 				<!-- <p style="margin-top: 20px">Pronto tambien en android.</p> -->
 			</div>
 		</div>
+	</div>
+	<div class="container">
+	<hr>
+	<!-- Footer -->
+		<footer>
+		    <div class="row">
+		        <div class="col-lg-12">
+		            <p>Copyright &copy; Favors4Good 2016</p>
+		        </div>
+		    </div>
+		</footer>
 	</div>
 </body>
 </html>
