@@ -16,6 +16,7 @@
 					<img alt="LOGO" src="">
 				</a>
 			</div>
+			<a href="/cuenta" style="margin-top:15px;" class="pull-right btn btn-primary">Acceder</a>
 		</div>
 	</nav>
 	<div class="container">
@@ -32,6 +33,12 @@
 					Descargar <br>
 					<b>iOS</b>
 				</a>
+				<hr>
+				<div>
+					<a href="/cuenta" class="btn btn-primary">Entrar</a>
+					- o -
+					<a href="/cuenta">Crear mi cuenta</a>
+				</div>
 				<!-- <p style="margin-top: 20px">Pronto tambien en android.</p> -->
 			</div>
 		</div>
