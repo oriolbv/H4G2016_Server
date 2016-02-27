@@ -48,13 +48,11 @@ class FavorController extends Controller
         return $user->favors();
     }
 
-    public function contactar($id_donant, $id_receptor, $id_favor)
+    public function contactar(Request $request)
     {
-        $favuser = FavorUser::create([
-            'favor_id'          => $id_favor,
-            'user_id_donant'    => $id_donant,
-            'user_id_rebut'     => $id_receptor
-        ]);
+        $input = $request->json()->all();
+
+        $favuser = FavorUser::create($input);
 
         return response()->json(['success' => 1, 'data' => $favuser]);
     }
