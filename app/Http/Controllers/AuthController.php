@@ -22,7 +22,7 @@ class AuthController extends Controller
     	$user = User::where('email', $input['email'])->first();
     	if($user) {
     		$pw = $input['password'];
-    		if (Hash::check($pw, $user->password)) return $user;
+    		if (Hash::check($pw, $user->password)) return response()->json(['success' => 1, 'data' => $user]);
     	}
     	return response()->json(['success' => 0, 'data' => 'Usuario o clave incorrectos.']);
     }
