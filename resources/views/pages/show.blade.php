@@ -14,9 +14,6 @@
                     
                     <div class="caption-full">
                         <p>{{ $favor->descripcio }}</p>
-                        <hr>
-                        <h3>Interesado? Descargate la app y ponte en contacto!</h3>
-                        <a href="/" class="btn btn-block btn-primary">Descargar</a>
                     </div>
                     <div class="ratings">
                         <p class="pull-right">3 reviews</p>
@@ -28,6 +25,11 @@
                             <span class="glyphicon glyphicon-star-empty"></span>
                             4.0 estrellas
                         </p>
+                    </div>
+                    <div class="caption-full">
+                        <hr>
+                        <h3>Interesado? Descargate la app y ponte en contacto!</h3>
+                        <a href="/" style="" class="download-ios">Descargar en iOS</a>
                     </div>
                 </div>
 
