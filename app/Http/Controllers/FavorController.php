@@ -32,12 +32,12 @@ class FavorController extends Controller
 
     public function favorsDemanats()
     {
-    	return Favor::demanats()->orderBy('created_at', 'DESC')->get();
+    	return Favor::with('user')->demanats()->orderBy('created_at', 'DESC')->get();
     }
 
     public function favorsOferts()
     {
-    	return Favor::oferts()->orderBy('created_at', 'DESC')->get();
+    	return Favor::with('user')->oferts()->orderBy('created_at', 'DESC')->get();
     }
 
     public function favorsByUser($id)
