@@ -15,8 +15,8 @@
 <nav class="navbar container">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">
-				<img alt="LOGO" src="">
+			<a class="navbar-brand" href="/list">
+				<img style="width:100px" alt="LOGO" src="/img/logoweb.png">
 			</a>
 		</div>
 	</div>

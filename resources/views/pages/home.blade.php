@@ -12,8 +12,8 @@
 	<nav class="navbar container">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
-					<img alt="LOGO" src="">
+				<a class="navbar-brand" href="/">
+					<img style="width:100px" alt="LOGO" src="/img/logoweb.png">
 				</a>
 			</div>
 			<a href="/cuenta" style="margin-top:15px;" class="pull-right btn btn-primary">Acceder</a>
