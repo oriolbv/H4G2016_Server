@@ -13,10 +13,12 @@ class CreateFavorUserTable extends Migration
     public function up()
     {
         Schema::create('favor_users', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('favor_id')->unsiged();
             $table->integer('user_id_rebut')->unsiged();
             $table->integer('user_id_donant')->unsiged();
             $table->boolean('fet');
+            $table->timestaps();
         });
     }
 
