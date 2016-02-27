@@ -15,15 +15,23 @@
                 <!-- <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" /> -->
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
-                        {{$favor->titol}}</h4>
+                        {{$favor->titol}}
+                        <span class="label label-warning pull-right">
+                            @if($favor->demanar)
+                                Pido
+                            @else
+                                Ofrezco
+                            @endif
+                        </span>
+                    </h4>
                     <p class="group inner list-group-item-text">
                         {{$favor->descripcio}}</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
-                            <span class="label label-primary">{{$favor->categoria}}</span>
+                            <span class="label label-default">{{$favor->categoria}}</span>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success pull-right" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
+                            <a class="btn btn-primary pull-right" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
                         </div>
                     </div>
                 </div>
