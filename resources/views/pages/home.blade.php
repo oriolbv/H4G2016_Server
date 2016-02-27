@@ -22,7 +22,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="http://app.viceversa.io/images/iphone/eb6de558.cut.svg" alt="">
+				<!-- <img src="http://app.viceversa.io/images/iphone/eb6de558.cut.svg" alt=""> -->
+                <img style="max-width:100%" src="/img/iphone.png" alt="">
 			</div>
 			<div class="col-sm-6">
 				<h1 class="title-home"><span>Favors4Good</span> <br>
