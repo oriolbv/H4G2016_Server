@@ -17,7 +17,7 @@
                     <h4 class="group inner list-group-item-heading">
                         {{$favor->titol}}
                         <span class="label label-warning pull-right">
-                            @if($favor->demanar)
+                            @if($favor->demanar == 1)
                                 Pido
                             @else
                                 Ofrezco
@@ -26,13 +26,10 @@
                     </h4>
                     <p class="group inner list-group-item-text">
                         {{$favor->descripcio}}</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <span class="label label-default">{{$favor->categoria}}</span>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-primary pull-right" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
-                        </div>
+
+                        <span class="label label-default">{{$favor->categoria}}</span>
+
+                        <a class="btn btn-primary btn-block" href="{{action('HomeController@show', [$favor->id])}}">+Info</a>
                     </div>
                 </div>
             </div>
