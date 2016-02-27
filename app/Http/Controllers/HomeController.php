@@ -32,6 +32,9 @@ class HomeController extends Controller
     public function show($id)
     {
     	//return Favor::findOrFail($id);
-        dd("HELLOO");
+        //dd("HELLOO");
+        $favor = Favor::findOrFail($id);
+        return view('pages.show')->with('favor', $favor);
+        
     }
 }
