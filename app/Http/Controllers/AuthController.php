@@ -15,7 +15,7 @@ use App\User;
 
 class AuthController extends Controller
 {
-    public function login(AuthRequest $request)
+    public function login(Request $request)
     {
         $input = $request->json()->all();
 
